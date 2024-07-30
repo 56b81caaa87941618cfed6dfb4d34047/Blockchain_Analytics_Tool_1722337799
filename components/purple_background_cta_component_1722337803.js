@@ -26,6 +26,8 @@ Vue.component("purple_background_cta_component_1722337803", {
                     <div class="flex" id="content-title-container"><h2 id="content-title" class="flex-1 h2 bg-clip-text pb-4" :class="[transparentTextStyle, contentCtaTitleStyle]"> Uncover Blockchain Insights</h2></div>
                     <div class="flex" id="content-body-container"><p id="content-body" class="flex-1 text-lg mb-8" :class="[contentBodyStyle]">Gain invaluable intelligence on the latest blockchain activities with our cutting-edge analytics platform. Uncover trends, identify opportunities, and stay ahead of the curve.</p></div>
                     <a id="content-cta-button" href="#0" class="btn transition duration-150 ease-in-out group" :class="[contentCtaButtonPrimaryStyle, contentCtaButtonGradientStyle, contentCtaButtonGradientStyle, contentCtaButtonHoverStyle]">Get Started <span id="content-cta-arrow" class="tracking-normal group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1" :class="contentCtaArrowStyle">-&gt;</span></a>
+                    
+                    <button id="submit-button" class="btn transition duration-150 ease-in-out mt-4" :class="[contentCtaButtonPrimaryStyle, contentCtaButtonGradientStyle, contentCtaButtonGradientStyle, contentCtaButtonHoverStyle]">Submit</button>
                 </div>
             </div>
         </div>

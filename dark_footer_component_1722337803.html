@@ -1,15 +1,6 @@
-/* Summary: Describes a footer section of a website. The footer contains the following sections, each of which is a column:
-1. The first column includes the company logo, copyright notice, and social media links.
-2. The second column lists the products and services offered by the company.
-3. The third column provides information about the company, including a blog, careers, and financial statements.
-4. The fourth column contains resources for the community, terms of service, and a vulnerability reporting page.
-5. The fifth column covers legal information such as the refund policy, terms and conditions, privacy policy, and brand kit.
-*/
-
-Vue.component("dark_footer_component_1722337803", {
-    template: `
+COMPONENT STARTS <hr>
 <footer id="footer-section-container">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-gradient-to-b from-blue-900 to-purple-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
  
         <!-- Blocks -->
         <div class="grid sm:grid-cols-12 gap-8 py-8 md:py-12">
@@ -21,7 +12,7 @@ Vue.component("dark_footer_component_1722337803", {
                             <!-- Logo -->
                             <a id="footer-logo" class="inline-flex" href="index.html" aria-label="Analyze new blockchain data easily"> <img src="./images/logo.svg" width="38" height="38" alt="Stellar"></a>
                         </div>
-                        <div id="footer-copyright" class="text-sm text-white">&copy; Analyze new blockchain data easily <span class="text-purple-300">-</span> All rights reserved.</div>
+                        <div id="footer-copyright" class="text-sm" :class="textColorSecondary">&copy; Analyze new blockchain data easily <span :class="textColorTertiary">-</span> All rights reserved.</div>
                     </div>
                     <!-- Social links -->
                     <ul id="footer-social-links" class="flex">
@@ -34,7 +25,7 @@ Vue.component("dark_footer_component_1722337803", {
  
             <!-- 2nd block -->
             <div id="footer-block-2" class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                <h6 id="footer-block-2-title" class="text-sm font-medium mb-2 text-purple-300">Blockchain Analytics</h6>
+                <h6 id="footer-block-2-title" class="text-sm font-medium mb-2" :class="textColorPrimary">Blockchain Analytics</h6>
                 <ul id="footer-block-2-list" class="text-sm space-y-2">
                     <li><a id="footer-block-2-link-1" class="transition duration-150 ease-in-out" :class="[textColorSecondary, hoverTextColorSecondary]" href="#0">Gain deep insights into emerging blockchain networks and transactions.</a></li>
                     <li><a id="footer-block-2-link-2" class="transition duration-150 ease-in-out" :class="[textColorSecondary, hoverTextColorSecondary]" href="#0">Our platform automatically ingests and parses new on-chain data.</a></li>
@@ -45,7 +36,7 @@ Vue.component("dark_footer_component_1722337803", {
  
             <!-- 3rd block -->
             <div id="footer-block-3" class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                <h6 id="footer-block-3-title" class="text-sm font-medium mb-2 text-purple-300">Blockchain Monitoring</h6>
+                <h6 id="footer-block-3-title" class="text-sm font-medium mb-2" :class="textColorPrimary">Blockchain Monitoring</h6>
                 <ul id="footer-block-3-list" class="text-sm space-y-2">
                     <li><a id="footer-block-3-link-1" class="transition duration-150 ease-in-out" :class="[textColorSecondary, hoverTextColorSecondary]" href="#0">Get real-time alerts on suspicious blockchain activity.</a></li>
                     <li><a id="footer-block-3-link-2" class="transition duration-150 ease-in-out" :class="[textColorSecondary, hoverTextColorSecondary]" href="#0">Monitor transactions, smart contracts, and network metrics.</a></li>
@@ -56,7 +47,7 @@ Vue.component("dark_footer_component_1722337803", {
  
             <!-- 4th block -->
             <div id="footer-block-4" class="sm:col-span-6 md:col-span-3 lg:col-span-2">
-                <h6 id="footer-block-4-title" class="text-sm font-medium mb-2 text-purple-300">Blockchain Consulting</h6>
+                <h6 id="footer-block-4-title" class="text-sm font-medium mb-2" :class="textColorPrimary">Blockchain Consulting</h6>
                 <ul id="footer-block-4-list" class="text-sm space-y-2">
                     <li><a id="footer-block-4-link-1" class="transition duration-150 ease-in-out" :class="[textColorSecondary, hoverTextColorSecondary]" href="#0">Leverage our expertise for your blockchain initiatives.</a></li>
                     <li><a id="footer-block-4-link-2" class="transition duration-150 ease-in-out" :class="[textColorSecondary, hoverTextColorSecondary]" href="#0">Advisory services on architecture, implementation, and strategy.</a></li>
@@ -66,23 +57,9 @@ Vue.component("dark_footer_component_1722337803", {
             </div>
         </div>
         <div class="flex justify-center pb-8">
-            <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out glow-purple-500">
+            <button class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out">
                 Submit
             </button>
         </div>
     </div>
-</footer>`,
-    data() {
-        return {
-            expanded: false,
-            tab: null,
-            textColorPrimary: 'text-white',
-            textColorSecondary: 'text-gray-300',
-            textColorTertiary: 'text-gray-400',
-            hoverTextColorPrimary: 'hover:text-purple-300',
-            hoverTextColorSecondary: 'hover:text-white',
-            socialColorPrimary: 'text-purple-400',
-            hoverSocialColorPrimary: 'hover:text-purple-300'
-        };
-    },
-});
+</footer><hr>COMPONENT ENDS

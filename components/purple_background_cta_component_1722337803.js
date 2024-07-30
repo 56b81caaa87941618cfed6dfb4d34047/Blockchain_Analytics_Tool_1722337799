@@ -4,8 +4,17 @@ It is centered on the page and includes a gradient-based title, a subtitle, a pa
 
 Vue.component("purple_background_cta_component_1722337803", {
     template: `
-    <section id="cta-section-container">
-        <div id="section-container" class="max-w-6xl mx-auto px-4 sm:px-6 bg-gray-900">
+    <section id="cta-section-container" class="flex">
+        <div id="sidebar" class="w-64 bg-gray-800 text-white p-4">
+            <nav>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-blue-300">Home</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-blue-300">About</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-blue-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="section-container" class="flex-1 max-w-6xl mx-auto px-4 sm:px-6 bg-gray-900">
             <div id="content-container" class="relative px-8 py-12 md:py-20 rounded-3xl overflow-hidden bg-gradient-to-br from-blue-900 to-purple-900 shadow-lg">
                 <!-- Radial gradient -->
                 <div id="radial-gradient" class="absolute flex items-center justify-center top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/3 aspect-square" aria-hidden="true">
